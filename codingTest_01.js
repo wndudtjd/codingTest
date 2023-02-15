@@ -88,3 +88,52 @@ function solution02(strings, n) {
       if (a[n] === b[n]) return a > b ? 1 : -1
   })
 }
+
+
+// DAY3 
+
+// codingTest-1
+
+//문제설명
+//이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
+//별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+
+//제한 조건
+
+//n과 m은 각각 1000 이하인 자연수입니다.
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', data => {
+    const n = data.split(" ");
+    const a = Number(n[0]), b = Number(n[1]);
+    // console.log(a); // 가로
+    // console.log(b); // 세로
+    for (let i = 0; i < b; i ++) {
+        let val = ""
+        for (let j = 0; j < a; j++) {
+            val = val + "*"
+        }
+        console.log(val)
+    }
+}); // 이번거는 옛날에 해봤던 문제라 쉽게 풀었음.
+
+
+
+// codingTest-2
+
+//문제설명
+//정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, solution을 완성해주세요.
+
+//제한조건
+
+//num은 int 범위의 정수입니다.
+//0은 짝수입니다.
+function solution(num) {
+  var answer = '';
+  if (num % 2 === 0) {
+      answer = answer + 'Even'
+      }else {
+      answer = answer + 'Odd'
+  }
+  return answer;
+} // 이번거도 아주 무난하게 쉽게 풀었다. 아직 =, ==, ===이 익숙하지않아 잘못사용하는실수가 있었다.
+
