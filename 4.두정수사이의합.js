@@ -33,6 +33,7 @@ function solution(a, b) {
 
 solution(5, 3)
 
+// 임건님 정답.
 function solution(a, b) {
   let min = a == b ? a : (a < b ? a : b)
   let max = min === a ? b : a;
