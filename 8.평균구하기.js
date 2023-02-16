@@ -9,12 +9,20 @@
 // arr	       return
 // [1,2,3,4]	   2.5
 // [5,5]	        5
-solution([1,2,3,4])
-function solution(arr) {
-  var answer = 0;
-  for (let i = 0; i < arr.length; i++) {
-    answer += arr[i]/arr.length
-  }
+// solution([1,2,3,4])
+// function solution01(arr) {
+//   var answer = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     answer += arr[i]/arr.length
+//   }
+//   console.log(answer)
+//   return answer;
+// }
+
+// reduce 메서드 사용하기.
+solution02([1,2,3,4])
+function solution02(arr) {
+  var answer = arr.reduce((sum, current) => sum + current)/arr.length;
   console.log(answer)
-  return answer;
+  return answer
 }
