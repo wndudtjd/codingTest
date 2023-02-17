@@ -18,3 +18,4 @@ function solution(s) {
   }
   return true;
 }
+// map 을 활용해보기
