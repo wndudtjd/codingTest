@@ -36,3 +36,4 @@ function solution(participant, completion) {
     }
   }
 }
+console.log(solution(["marina", "josipa", "nikola", "vinko", "filipa"],["josipa", "filipa", "marina", "nikola"]))
