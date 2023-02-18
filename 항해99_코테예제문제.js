@@ -93,7 +93,7 @@ let arr2 = [23, 23, 30, 28, 30, 23, 23];
 // s result
 // "97 75 88 99 95 92 73" "75 97"
 
-// 에라토스테네스의 체
+// 
 function solution03(s){
 let sArr = s.split(" ")
 let num = [];
