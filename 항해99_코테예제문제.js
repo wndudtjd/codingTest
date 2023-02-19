@@ -106,7 +106,7 @@ sArr.forEach((item) => {
   }
 })
 console.log(num)
-let result1 = [...new Set(num)];
+let result1 = [...new Set(num)]; // 배열 중복 제거.
 
 result1.sort()
 sArr.sort()
@@ -114,11 +114,11 @@ sArr.sort()
 console.log("result1: ",result1)
 console.log("sArr: ",sArr)
 
-let difference = sArr.filter(x => !result1.includes(x))
+let difference = sArr.filter(x => !result1.includes(x)) // 차집합!
 console.log(difference)
 
-let max = Math.max(...difference)
-let min = Math.min(...result1)
+let max = Math.max(...difference) // 소수의 최대값
+let min = Math.min(...result1) // 소수아닌수의 최소값
 return String(min+" "+max);
 }
 let s="97 75 88 99 95 92 73";
